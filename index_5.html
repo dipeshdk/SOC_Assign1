@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<script type="text/javascript">
+	function search ()
+	{
+		document.getElementById('win').src = document.getElementById("tb").value;
+	}
+	function go ()
+	{
+		document.getElementById('win').height = (document.getElementById('height').value ) ;
+		document.getElementById('win').width = (document.getElementById('width').value ) ;
+	}
+</script>
+<body>
+	<center>
+		<h1>My First sub-window<br>
+		<iframe id = "win" ></iframe><br>
+		<label>
+		Type Url here:
+		<input type="text" id="tb">
+		</label>
+		<input type="button" id="search" value = "Search!" onclick="search()"><br>
+		<label>
+			 Enter Height:
+			<input type="number" id="height">
+		</label>
+		<label>
+			Enter Width:
+			<input type="number" id="width" >
+		</label>
+		<input type="button" id="go" value = "Go!" onclick="go()"><br>	
+		
+	</center>
+	
+</body>
+</html>

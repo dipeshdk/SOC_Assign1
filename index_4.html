@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<script type="text/javascript">
+	function go (){
+		document.getElementById('win').src = document.getElementById("tb").value;
+	}
+</script>
+<body>
+	<center>
+		<h1>My First sub-window<br>
+		<iframe id = "win" height="50%" width="50%" ></iframe>
+	</center>
+	<label>
+		Type Url here:
+		<input type="text" id="tb">
+	</label>
+	<input type="button" id="go" value = "Go!" onclick="go()">
+	
+</body>
+</html>

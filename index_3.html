@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My first sub-window</title>
+</head>
+<script type="text/javascript">
+	function wiki(){
+		document.getElementById('win').src = "https://www.wikipedia.org/"
+	}
+	function ub(){
+		document.getElementById('win').src = "https://www.ubuntu.com/"
+	}
+	function mth(){
+		document.getElementById('win').src = "http://home.iitk.ac.in/~santosha/MTH102.html"
+	}
+</script>
+<body>
+	<center>
+		<h1>My First sub-window<br>
+		<iframe id = "win" height="50%" width="50%" ></iframe>
+	</center>
+	<input type="button" id="b1" value="wikipedia" onclick="wiki()">
+	<input type="button" id="b2" value="ubuntu" onclick="ub()">
+	<input type="button" id="b3" value="MTH102" onclick="mth()">
+
+</body>
+</html>
